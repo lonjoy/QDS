@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="all" />
+	<meta name="author" content="" />
+	<meta name="copyright" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<title>ui-table</title>
+	<link rel="stylesheet" href="../core-reset.css" />
+	<link rel="stylesheet" href="../core-ui.css" />
+	<style type="text/css">
+
+.T_h1{font-size: 32px;}
+
+.ui-table-wrap{
+	box-shadow:0 1px 15px rgba(0,0,0,.15);
+}
+.qz-ui-table .name{1text-align:left;}
+
+.qz-ui-table th,
+.qz-ui-table td{
+	border: none;
+	border-left: 1px solid #e1e1e1;
+}
+.qz-ui-table th{
+	font-weight: normal;
+}
+
+
+	</style>
+</head>
+
+<!--
+	Copy Right: Tencent ISUX
+	Project: Esay CSS - Qzone
+	Comments: ui-table
+	@author qileiwei
+	@author kolawang
+	@author meterscao
+-->
+<h1 class="T_h1">TABLE </h1>
+
+
+
+<h2 class="T_h2">常用表格</h2>
+
+<div class="ui-table-wrap" style="width:400px">
+	<table class="ui-table">
+		<colgroup>
+			<col ></col>
+			<col width="70"></col>
+			<col width="70"></col>
+			<col width="80"></col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th> 名称 </th>
+				<th> 分类 </th>
+				<th> 数量 </th>
+				<th> 操作 </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td> 小炒茄子 </td>
+				<td> 蔬菜 </td>
+				<td> 2 </td>
+				<td> <a href="#">+1</a> </td>
+			</tr>
+			<tr>
+				<td> 金针菇肉丝 </td>
+				<td> 肉类 </td>
+				<td> 4 </td>
+				<td> <a href="#">+1</a> </td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<h2 class="T_h2">常用表格 - VIP</h2>
+
+<div class="ui-table-wrap" style="width:400px">
+	<table class="ui-table">
+		<colgroup>
+			<col ></col>
+			<col width="70"></col>
+			<col width="70"></col>
+			<col width="80"></col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th> 名称 </th>
+				<th> 分类 </th>
+				<th> 数量 </th>
+				<th> 操作 </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td> 小炒茄子 </td>
+				<td> 蔬菜 </td>
+				<td> 2 </td>
+				<td> <a href="#">+1</a> </td>
+			</tr>
+			<tr>
+				<td> 金针菇肉丝 </td>
+				<td> 肉类 </td>
+				<td colspan="2" rowspan="2" class="t-mid"> 会员专享 </td>
+			</tr>
+			<tr>
+				<td> 腐竹肉片 </td>
+				<td> 肉类 </td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<h2 class="T_h2">常用表格 - 斑马纹</h2>
+
+<div class="ui-table-wrap" style="width:400px">
+	<table class="ui-table ui-table-odd1">
+		<colgroup>
+			<col ></col>
+			<col width="70"></col>
+			<col width="70"></col>
+			<col width="80"></col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th> 名称 </th>
+				<th> 分类 </th>
+				<th> 数量 </th>
+				<th> 操作 </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="t-odd">
+				<td> 小炒茄子 </td>
+				<td> 蔬菜 </td>
+				<td> 2 </td>
+				<td> <a href="#">+1</a> </td>
+			</tr>
+			<tr>
+				<td> 金针菇肉丝 </td>
+				<td> 肉类 </td>
+				<td> 4 </td>
+				<td> <a href="#">+1</a> </td>
+			</tr>
+			<tr class="t-highlight">
+				<td> 腐竹肉片 </td>
+				<td> 肉类 </td>
+				<td> 4 </td>
+				<td> <a href="#">+1</a> </td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+<h2 class="T_h2">带标题</h2>
+
+<div class="ui-table-wrap my-table" style="width:400px">
+	<table class="ui-table ui-table-caption">
+		<colgroup>
+			<col ></col>
+			<col width="70"></col>
+			<col width="70"></col>
+			<col width="80"></col>
+		</colgroup>
+		<caption>
+			<h2>地沟油 - 菜单</h2>
+			<span class="cap-tip">
+				满100送可乐一瓶
+			</span>
+		</caption>
+		<thead>
+			<tr>
+				<th> 名称 </th>
+				<th> 分类 </th>
+				<th> 数量 </th>
+				<th> 操作 </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td> 小炒茄子 </td>
+				<td> 蔬菜 </td>
+				<td> 2 </td>
+				<td> <a href="#">+1</a> </td>
+			</tr>
+			<tr>
+				<td> 腐竹肉片 </td>
+				<td> 肉类 </td>
+				<td> 4 </td>
+				<td> <a href="#">+1</a> </td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<h2 class="T_h2">空间表格</h2>
+<div class="ui-table-wrap my-table">
+	<table class=" qz-ui-table ui-table ui-table-even">
+		<colgroup>
+			<col ></col>
+			<col width="70"></col>
+			<col width="70"></col>
+			<col width="70"></col>
+			<col width="70"></col>
+			<col width="70"></col>
+			<col width="70"></col>
+			<col width="80"></col>
+		</colgroup>
+		<caption>
+			<h2>第一部分、黄钻成长特权</h2>
+			<span class="cap-tip">
+				您现在是黄钻Lv7，您的特权成长为
+			</span>
+		</caption>
+		<tbody>
+			<tr>
+				<th></th>
+				<th> Lv 1 </th>
+				<th> Lv 2 </th>
+				<th> Lv 3 </th>
+				<th> Lv 4 </th>
+				<th> Lv 5 </th>
+				<th> Lv 6 </th>
+				<th> Lv 7 </th>
+			</tr>
+			<tr>
+				<th> 超大相册 </th>
+				<td> 5G </td>
+				<td> 10G </td>
+				<td> 15G </td>
+				<td> 20G </td>
+				<td> 25G </td>
+				<td> 30G </td>
+				<td> 50G </td>
+			</tr>
+			<tr>
+				<th> 专属道具 </th>
+				<td> 每月1个 </td>
+				<td> 每月2个 </td>
+				<td> 每月2个 </td>
+				<td> 每月4个 </td>
+				<td> 每月4个 </td>
+				<td> 每月6个 </td>
+				<td> 每月10个 </td>
+			</tr>
+			<tr>
+				<th> 日志信纸 </th>
+				<td> 无限量 </td>
+				<td> 无限量 </td>
+				<td> 无限量 </td>
+				<td> 无限量 </td>
+				<td> 无限量 </td>
+				<td> 无限量 </td>
+				<td> 无限量 </td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<body>
+
+</body>
+</html>

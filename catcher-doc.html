@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="all" />
+	<meta name="author" content="" />
+	<meta name="copyright" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<title>Catcher-Doc</title>
+	<style type="text/css">
+		body{line-height:1.5;font-size:14px;}
+		em{color:#900}
+		section{padding-left:2em;margin-bottom:4em;}
+		section > h2{text-indent:-1em;}
+		section > h3{margin:0 0 0.5em 0;}
+		section > dl,
+		section > ul,
+		section > ol{margin:0 0 2em 2em;}
+	</style>
+</head>
+<body>
+<article>
+	<section>
+		<h2>框架结构</h2>
+		<h3>页面模板</h3>
+		<dl>
+			<dt>DTD</dt>
+			<dd>
+				使用HTML5的文件头声明&lt;!DOCTYPE HTML&gt;</dd>
+			<dt>编码</dt>
+			<dd>&lt;meta charset="UTF-8"&gt;</dd>
+			<dt>IE渲染模式</dt>
+			<dd>&ltmeta http-equiv="X-UA-Compatible" content="edge" /&gt;</dd>
+		</dl>
+		<h3>代码约定</h3>
+		<ol>
+			<li>标签使用约定</li>
+			<li>标签属性使用约定</li>
+			<li>样式命名写法约定</li>
+			<li>注释规范</li>
+		</ol>
+		<h3>页面布局</h3>
+		<ol>
+			<li>
+				栏目居中固定布局
+				<ul>
+					<li>900px</li>
+					<li>940px</li>
+					<li>960px</li>
+					<li>1000px</li>
+					<li>1170px</li>
+				</ul>
+			</li>
+			<li>
+				页面自适宽度布局
+				<ul>
+					<li>左栏固定宽 + 右栏自适应</li>
+					<li>左栏自适应 + 右栏固定宽</li>
+					<li>左右两栏固定宽 + 中栏自适应</li>
+				</ul>
+			</li>
+			<li>
+				页面栅格布局（响应式）
+				<ul>
+					<li>940宽12栏栅格</li>
+					<li>1170宽12栏栅格</li>
+				</ul>
+			</li>
+		</ol>
+		<h3>页面无障碍性</h3>
+		<ol>
+			<li>标签，属性</li>
+			<li>解决方案</li>
+		</ol>
+		<h3>响应式布局</h3>
+		<ol>
+			<li>布局参照
+				<ul>
+					<li>智能手机 480px <= W</li>
+					<li>智能手机和平板电脑 480px < W <= 768px</li>
+					<li>平板电脑 768px < W <=960</li>
+					<li>普通屏幕(默认) 960px < W <= 1200px</li>
+					<li>大屏幕 1200px <= W</li>
+				</ul>
+			</li>
+			<li>多设备解决方案</li>
+		</ol>
+	</section>
+	<section>
+		<h2>基础UI</h2>
+
+		<h3>文本样式</h3>
+		<p>后期可考虑加入LESS</p>
+		<ul>
+			<li>字体与字号</li>
+			<li>段落与行高</li>
+		</ul>
+
+		<h3>基本reset</h3>
+
+		<ol>
+			<li>文本对齐相关
+				<ul>
+					<li>.ui-align-left</li>
+					<li>.ui-align-right</li>
+					<li>.ui-align-center</li>
+				</ul>
+			</li>
+			<li>浮动相关
+				<ul>
+					<li>.ui-left</li>
+					<li>.ui-right</li>
+					<li>.ui-clearfix</li>
+				</ul>
+			</li>
+			<li>
+				隐藏相关
+				<ul>
+					<li>.ui-none</li>
+					<li>.ui-hidden</li>
+				</ul>
+			</li>
+			<li>ICON：图标</li>
+			<li>数字提醒气泡，数字提醒小点，叉叉</li>
+			<li>
+				BUTTON：按钮，<br />
+				ICON-BUTTON：图标按钮
+			</li>
+			<li>ul,ol
+				<ul>
+					<li>默认没有list-style</li>
+					<li>点号</li>
+					<li>数字</li>
+				</ul>
+			</li>
+			<li>dl</li>
+			<li>form表单（无障碍）
+				<ul>
+					<li>按钮button</li>
+					<li>文本输入框</li>
+					<li>单选，复选框</li>
+					<li>下拉选择器</li>
+				</ul>
+			</li>
+			<li>table
+				<ul>
+					<li>有边框</li>
+					<li>无边框</li>
+				</ul>
+			</li>
+		</ol>
+	</section>
+	<section>
+		<h2>组件类</h2>
+		<ol>
+			<li>导航
+				<ul>
+					<li>TAB导航</li>
+					<li>面包屑导航</li>
+				</ul>
+			</li>
+			<li>气泡
+				<ul>
+					<li>查看气泡（白色）</li>
+					<li>提示气泡（黄色）</li>
+				</ul>
+			</li>
+			<li>提示条
+				<ul>
+					<li>确认</li>
+					<li>警告</li>
+					<li>错误</li>
+				</ul>
+			</li>
+			<li>浮出层</li>
+			<li>下拉
+				<ul>
+					<li>下拉菜单</li>
+					<li>button-group</li>
+				</ul>
+			</li>
+			<li>翻页组件</li>
+			<li>日历控件</li>
+			<li>进度条</li>
+			<li>滑动条</li>
+		</ol>
+	</section>
+	<section>
+		<h2>CSS3动画[扩展]</h2>
+		<ol>
+			<li>transition</li>
+			<li>animate
+				<ul>
+					<li>基本animate</li>
+					<li>效果展示</li>
+				</ul>
+			</li>
+		</ol>
+	</section>
+</article>
+</body>
+</html>			
