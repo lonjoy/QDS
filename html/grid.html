@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="all" />
+	<meta name="author" content="" />
+	<meta name="copyright" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grid</title>
+	<link rel="stylesheet" href="../core-grid.css" />
+	<style type="text/css">
+	body{color:#666;font-family:"arail";margin: 0;padding:0;}
+	.wrap{background-color:#fefefe;width:940px;margin:50px auto;}
+	.span-placeholder{height:14px;padding:10px 0;line-height:14px;font-size:12px;background-color:#ddd;text-align:center;border-radius:3px;}
+	.grid{margin-bottom:20px;}
+
+
+	.grid{zoom:1;}
+	.grid:after{overflow: hidden;content:" ";font-size:0;line-height:0;display: block;clear:both;}
+	.grid-span{float:left;}
+
+	.grid{margin-left:-20px;}
+	.grid .grid-span{margin-left:20px;}
+	.grid .grid-span1{width:60px;}
+	.grid .grid-span2{width:140px;}
+	.grid .grid-span3{width:220px;}
+	.grid .grid-span4{width:300px;}
+	.grid .grid-span5{width:380px;}
+	.grid .grid-span6{width:460px;}
+	.grid .grid-span7{width:540px;}
+	.grid .grid-span8{width:620px;}
+	.grid .grid-span9{width:700px;}
+	.grid .grid-span10{width:780px;}
+	.grid .grid-span11{width:860px;}
+	.grid .grid-span12{width:940px;}
+
+
+@media (min-width: 1170px){
+	.wrap{width:1170px;}
+   .grid{margin-left:-30px;}
+	.grid .grid-span{margin-left:30px;}
+	.grid .grid-span1{width:70px;}
+	.grid .grid-span2{width:170px;}
+	.grid .grid-span3{width:270px;}
+	.grid .grid-span4{width:370px;}
+	.grid .grid-span5{width:470px;}
+	.grid .grid-span6{width:570px;}
+	.grid .grid-span7{width:670px;}
+	.grid .grid-span8{width:770px;}
+	.grid .grid-span9{width:870px;}
+	.grid .grid-span10{width:970px;}
+	.grid .grid-span11{width:1070px;}
+	.grid .grid-span12{width:1170px;}
+}
+
+
+@media (min-width: 768px) and (max-width: 939px) {
+	.wrap{width:720px;}
+   .grid{margin-left:-15px;}
+	.grid .grid-span{margin-left:15px;}
+	.grid .grid-span1{width:45px;}
+	.grid .grid-span2{width:105px;}
+	.grid .grid-span3{width:165px;}
+	.grid .grid-span4{width:225px;}
+	.grid .grid-span5{width:285px;}
+	.grid .grid-span6{width:345px;}
+	.grid .grid-span7{width:405px;}
+	.grid .grid-span8{width:465px;}
+	.grid .grid-span9{width:525px;}
+	.grid .grid-span10{width:585px;}
+	.grid .grid-span11{width:645px;}
+	.grid .grid-span12{width:705px;}
+}
+
+@media (min-width: 470px) and (max-width: 767px) {
+	.wrap{width:470px;}
+   .grid{margin-left:-10px;}
+	.grid .grid-span{margin-left:10px;}
+	.grid .grid-span1{width:30px;}
+	.grid .grid-span2{width:70px;}
+	.grid .grid-span3{width:110px;}
+	.grid .grid-span4{width:150px;}
+	.grid .grid-span5{width:190px;}
+	.grid .grid-span6{width:230px;}
+	.grid .grid-span7{width:270px;}
+	.grid .grid-span8{width:310px;}
+	.grid .grid-span9{width:350px;}
+	.grid .grid-span10{width:390px;}
+	.grid .grid-span11{width:430px;}
+	.grid .grid-span12{width:470px;}
+}
+
+
+@media (max-width: 469px) {
+	.wrap{width:auto;margin:50px 20px;}
+   	.grid{margin-left:0}
+	.grid .grid-span{margin-left:0;width:auto;float: none;margin-bottom:5px;}
+}
+
+	</style>
+</head>
+
+<!--
+	Copy Right: Tencent ISUX
+	Project: Esay CSS - Qzone
+	Comments: ui-form
+	@author qileiwei
+	@author kolawang
+	@author meterscao
+-->
+
+<body>
+<div class="wrap">
+	<div class="grid">
+		<div class="grid-span grid-span1"><div class="span-placeholder">span1</div></div>
+		<div class="grid-span grid-span1"><div class="span-placeholder">span1</div></div>
+		<div class="grid-span grid-span1"><div class="span-placeholder">span1</div></div>	
+		<div class="grid-span grid-span1"><div class="span-placeholder">span1</div></div>
+		<div class="grid-span grid-span1"><div class="span-placeholder">span1</div></div>	
+		<div class="grid-span grid-span1"><div class="span-placeholder">span1</div></div>	
+		<div class="grid-span grid-span1"><div class="span-placeholder">span1</div></div>
+		<div class="grid-span grid-span1"><div class="span-placeholder">span1</div></div>
+		<div class="grid-span grid-span1"><div class="span-placeholder">span1</div></div>	
+		<div class="grid-span grid-span1"><div class="span-placeholder">span1</div></div>
+		<div class="grid-span grid-span1"><div class="span-placeholder">span1</div></div>	
+		<div class="grid-span grid-span1"><div class="span-placeholder">span1</div></div>		
+	</div>
+	<div class="grid">
+		<div class="grid-span grid-span2"><div class="span-placeholder">span2</div></div>
+		<div class="grid-span grid-span2"><div class="span-placeholder">span2</div></div>
+		<div class="grid-span grid-span2"><div class="span-placeholder">span2</div></div>	
+		<div class="grid-span grid-span2"><div class="span-placeholder">span2</div></div>
+		<div class="grid-span grid-span2"><div class="span-placeholder">span2</div></div>	
+		<div class="grid-span grid-span2"><div class="span-placeholder">span2</div></div>		
+	</div>
+	<div class="grid">
+		<div class="grid-span grid-span3"><div class="span-placeholder">span3</div></div>
+		<div class="grid-span grid-span3"><div class="span-placeholder">span3</div></div>
+		<div class="grid-span grid-span3"><div class="span-placeholder">span3</div></div>	
+		<div class="grid-span grid-span3"><div class="span-placeholder">span3</div></div>		
+	</div>
+	<div class="grid">
+		<div class="grid-span grid-span4"><div class="span-placeholder">span4</div></div>
+		<div class="grid-span grid-span4"><div class="span-placeholder">span4</div></div>
+		<div class="grid-span grid-span4"><div class="span-placeholder">span4</div></div>		
+	</div>
+	<div class="grid">
+		<div class="grid-span grid-span6"><div class="span-placeholder">span6</div></div>
+		<div class="grid-span grid-span6"><div class="span-placeholder">span6</div></div>		
+	</div>
+	<div class="grid">
+		<div class="grid-span grid-span2"><div class="span-placeholder">span2</div></div>
+		<div class="grid-span grid-span10"><div class="span-placeholder">span10</div></div>
+	</div>	
+	<div class="grid">
+		<div class="grid-span grid-span3"><div class="span-placeholder">span3</div></div>
+		<div class="grid-span grid-span9"><div class="span-placeholder">span9</div></div>
+	</div>
+	<div class="grid">
+		<div class="grid-span grid-span4"><div class="span-placeholder">span4</div></div>
+		<div class="grid-span grid-span8"><div class="span-placeholder">span8</div></div>	
+	</div>
+	<div class="grid">
+		<div class="grid-span grid-span2"><div class="span-placeholder">span2</div></div>
+		<div class="grid-span grid-span8"><div class="span-placeholder">span8</div></div>
+		<div class="grid-span grid-span2"><div class="span-placeholder">span2</div></div>	
+	</div>
+</div>
+</body>
+</html>
