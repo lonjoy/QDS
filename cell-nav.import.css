@@ -1,0 +1,117 @@
+/*
+ * Copy Right: Tencent ISUX
+ * Project: Esay CSS - Qzone
+ * Comments: tab
+ * @author qileiwei
+ * @author kolawang
+ * @author meterscao
+ */
+
+/* cell-tab */
+
+.cell-tab{position:relative;*zoom:1;}
+
+.cell-tab-tags:before,
+.cell-tab-tags:after{content:".";height:0;visibility:hidden;display:block;clear:both;}
+.cell-tab-tags{display:inline-block}
+.cell-tab-tags{display:block}
+.cell-tab-tags{border-bottom:1px solid #d9d9d9;}
+
+.cell-tab-tags li{float:left;margin-right:6px;_display:inline;}
+.cell-tab-tags li a{float:left;position:relative;bottom:-1px;height:31px;padding:0 10px;line-height:31px;background-color:#f9f9f9;color:#666;border:1px solid #d9d9d9;border-radius:3px 3px 0 0;}
+.cell-tab-tags a:hover{background-color:#f3f3f3;text-decoration:none;}
+.cell-tab-tags .active a,
+.cell-tab-tags .active a:hover{background-color:#fff;border-bottom-color:#fff;cursor:default;}
+.cell-tab-other{position:absolute;right:0;top:0;height:32px;line-height:32px;}
+
+.cell-tab-cont .cell-tab-pane{display:none;padding:10px;}
+.cell-tab-cont .active{ display: block;}
+
+/* cell-tabs-left */
+.cell-tabs:before,
+.cell-tabs:after{content:".";height:0;visibility:hidden;display:block;clear:both;}
+.cell-tabs{display:inline-block}
+.cell-tabs{display:block}
+.cell-tabs-left .cell-tab-cont{border-left:1px solid #d9d9d9;display:table-cell;*zoom:1;}
+.cell-tabs-left .cell-tab-cont:after {
+  clear: both;
+  display: block;
+  visibility: visible;
+  overflow: hidden;
+  height: 0 !important;
+  line-height: 0;
+  font-size: xx-large;
+content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+}
+
+.cell-tabs-left .cell-tab-tags{ position: relative;margin-right:-1px;border-bottom:0 none;border-right:1px solid #d9d9d9;_margin-right:-4px;}
+.cell-tabs-left .cell-tab-tags li,
+.cell-tabs-left .cell-tab-tags li a{ float: none; display: block;}
+.cell-tabs-left .cell-tab-tags li a{border-radius:3px 0 0 3px;bottom:0;}
+.cell-tabs-left .cell-tab-tags li{margin:0 -1px 5px 0;}
+.cell-tabs-left .active a, .cell-tabs-left .active a:hover{border-bottom-color:#d9d9d9;border-right-color:#fff;}
+.cell-tabs-left .cell-tab{width:100px; float: left;}
+
+/* cell-tab-stacked */
+
+.cell-tab-stacked li,
+.cell-tab-stacked li a{ float: none; display: block;}
+.cell-tab-stacked li{ position: relative;margin-bottom:-1px;}
+.cell-tab-stacked li a{position:static;border-radius:0;}
+.cell-tab-stacked .cell-tab-tags{border-bottom:0 none;}
+.cell-tab-stacked .cell-tab-tags > li:first-child > a {border-radius:3px 3px 0 0;}
+.cell-tab-stacked .cell-tab-tags > li:last-child > a {border-radius:0 0 3px 3px;}
+
+/* cell-tab-left */
+.cell-tab-left{width:120px;}
+.cell-tab-left li,
+.cell-tab-left li a{ float: none; display: block;}
+.cell-tab-left .cell-tab-tags{border-bottom:0 none;border-right:1px solid #ddd;}
+.cell-tab-left .cell-tab-tags li{margin:0 -1px 0 0;}
+
+/* cell-tab-stacked with icon  todo 这里关于图标对齐的结构写法有分歧，待讨论*/
+.ui-list-icon-m,
+.ui-list-icon-l{position: relative;display: inline-block;height:100%;vertical-align:top;*vertical-align:middle;}
+.ui-list-icon-m .ui-icon,
+.ui-list-icon-l .ui-icon{position: absolute;top:50%;}
+.ui-list-icon-m{ width:16px;margin-right:5px;}
+.ui-list-icon-m .ui-icon{ margin-top:-8px;width:16px;height:16px;}
+
+.ui-list-icon-l{ width:24px;margin-right:8px;}
+.ui-list-icon-l .ui-icon{ margin-top:-12px;width:24px;height:24px;}
+
+.icon-bell-m{ background-image: url(slice/wc-icon/bell-icon-16.png);}
+.icon-clock-m{ background-image: url(slice/wc-icon/clock-icon-16.png);}
+.icon-bell-l{ background-image: url(slice/wc-icon/bell-icon-24.png);}
+.icon-clock-l{ background-image: url(slice/wc-icon/clock-icon-24.png);}
+
+/* cell-pill */
+
+.cell-pill{position:relative;*zoom:1;}
+
+.cell-pill-tags:after{content:".";height:0;visibility:hidden;display:block;clear:both;font-size:0;line-height:0;}
+.cell-pill-tags{display:inline-block}
+.cell-pill-tags{display:block}
+
+.cell-pill-tags li{float:left;margin-right:6px;_display:inline;}
+.cell-pill-tags li a{float:left;height:32px;padding:0 10px;line-height:32px;color:#52adda;border-radius:3px;}
+.cell-pill-tags a:hover{background-color:#f3f3f3;text-decoration:none;}
+.cell-pill-tags .active a,
+.cell-pill-tags .active a:hover{background-color:#52adda;color:#fff;cursor:default;}
+.cell-pill-other{position:absolute;right:0;top:0;height:32px;line-height:32px;}
+
+/* cell-pill-stacked */
+
+.cell-pill-stacked li,
+.cell-pill-stacked li a{ float: none; display: block;}
+.cell-pill-stacked li a{position:static;color:#52adda;}
+.cell-pill-stacked .cell-tab-tags{border-bottom:0 none;}
+.cell-pill-stacked .cell-tab-tags > li:first-child > a {border-radius:3px 3px 0 0;}
+.cell-pill-stacked .cell-tab-tags > li:last-child > a {border-radius:0 0 3px 3px;}
+
+/* cell-breadcrumb */
+
+.cell-breadcrumb .cell-breadcrumb-tags li{height:30px;line-height:30px;display: inline-block;*display:inline;*zoom:1;}
+.cell-breadcrumb .cell-breadcrumb-tags a{color:#52adda;}
+.cell-breadcrumb .cell-breadcrumb-tags .divider{padding:0 5px;color:#a9a9a9;font-family:simsun;}
+.cell-breadcrumb .cell-breadcrumb-tags .active{color:#666;font-weight:700;}

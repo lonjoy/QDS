@@ -7,4 +7,23 @@
  * @author meterscao
  */
 
+/* cell-pagenav 基本分页样式 居中 */
+.cell-pagenav{text-align:center;color:#666;}
+.cell-pagenav a,
+.cell-pagenav span{display: inline-block;margin-right:5px;padding:0 5px;white-space:nowrap;line-height:22px;text-align:center;vertical-align:middle;min-width:15px;_width:15px;}
+.cell-pagenav a{color:#52ADDA;border:1px solid #ddd; }
+.cell-pagenav a:hover{text-decoration:none;border-color:#52ADDA;}
+.cell-pagenav .jump{padding-left:3px;}
+.cell-pagenav .jump input{width:32px;height:22px;line-height:22px;margin:0 3px;padding:0 2px;border:1px solid #ddd;*vertical-align:middle;_margin-top:-1px;}
+.cell-pagenav .jump input:hover{border-color:#ccc;}
+.cell-pagenav .jump input:focus{border-color:#52ADDA;}
+.cell-pagenav .active{ border:1px solid #52ADDA;background-color: #e7f0f5;color:#52ADDA;cursor:default;}
+
+
+/* cell-pagenav-left */
+.cell-pagenav-left{text-align:left;}
+
+/* cell-pagenav-right */
+.cell-pagenav-right{text-align:right;}
+
 

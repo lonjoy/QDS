@@ -7,4 +7,5 @@
  * @author meterscao
  */
 
-@import url("cell-tab.import.css");/* 组件-tab */
+@import url("cell-nav.import.css");/* 组件-导航 */
+@import url("cell-pagenav.import.css");/* 组件-分页 */

@@ -8,8 +8,24 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<title>cell-calendar</title>
+	<link rel="stylesheet" href="../core-reset.css" />
+	<link rel="stylesheet" href="../core-ui.css" />
+	<link rel="stylesheet" href="../cell-calendar.import.css" />
 	<style type="text/css">
+
+	.T_h1{font-size: 32px;}
+
+	.cell-calender{
+		box-shadow:0 1px 15px rgba(0,0,0,.15);
+		margin-bottom:30px;
+	}
+
+	.T_wrap{
+		margin:30px;
+	}
 	</style>
+
+
 </head>
 
 <!--
@@ -20,6 +36,91 @@
 	@author kolawang
 	@author meterscao
 -->
+
+
+
+	<h1 class="T_h1">calender </h1>
+
+
+
+<h2 class="T_h2">标准日历</h2>
+<div class="T_wrap">
+<input value="2012-5-7" />
+
+<div class="cell-calender" style="position:relative; top:-1px">
+	<table class="cell-calender-table">
+		<thead>
+			<tr class="cell-calender-op">
+				<th> <span class="c-prev">◄</span> </th>
+				<th colspan="5"> <h3>2012 - <span>12</span><h3> </th>
+				<th> <span class="c-next">►</span> </th>
+			</tr>
+			<tr class="cell-calender-hd">
+				<th> 日 </th>
+				<th> 一 </th>
+				<th> 二 </th>
+				<th> 三 </th>
+				<th> 四 </th>
+				<th> 五 </th>
+				<th> 六 </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="t-pre"> 28 </td>
+				<td class="t-pre"> 29 </td>
+				<td class="t-pre"><span class="t-onion">30</span></td>
+				<td><span class="t-onion">1</span></td>
+				<td> 2 </td>
+				<td> 3 </td>
+				<td> 4 </td>
+			</tr>
+			<tr>
+				<td> 5 </td>
+				<td> 6 </td>
+				<td> 7 </td>
+				<td> 8 </td>
+				<td> 9 </td>
+				<td> 10 </td>
+				<td> 11 </td>
+			</tr>
+			<tr>
+				<td> 12 </td>
+				<td> 13 </td>
+				<td> 14 </td>
+				<td> 15 </td>
+				<td> 16 </td>
+				<td> <span class="t-onion">30</span></td>
+				<td> 18 </td>
+			</tr>
+			<tr>
+				<td> 19 </td>
+				<td> 20 </td>
+				<td> 21 </td>
+				<td> 22 </td>
+				<td> 23 </td>
+				<td> 24 </td>
+				<td> 25 </td>
+			</tr>
+			<tr>
+				<td> 26 </td>
+				<td> 27 </td>
+				<td> 28 </td>
+				<td> 29 </td>
+				<td> 30 </td>
+				<td> <span class="t-onion">31</span> </td>
+				<td class="t-pre">  <span class="t-onion">1</span> </td>
+			</tr>
+		</tbody>
+	</table>
+
+</div>
+
+
+</div>
+
+
+
 
 <body>
 

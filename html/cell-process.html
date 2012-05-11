@@ -8,7 +8,83 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<title>cell-process</title>
+	<link rel="stylesheet" href="../core-reset.css" />
+	<link rel="stylesheet" href="../core-ui.css" />
 	<style type="text/css">
+		.ui-process{background-color: #EFEFEF;
+		    background-image: -moz-linear-gradient(center top , #F5F5F5, #F9F9F9);
+		    background-repeat: repeat-x;
+		    border-radius:3px;
+		    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+		    height: 16px;
+		    overflow: hidden;
+		}
+		.ui-process-inner{
+			background-color: #35A0DA;
+		    background-image: -moz-linear-gradient(center top , #4EB5EB, #45A2D6);
+		    background-image: -webkit-linear-gradient(center top , #4EB5EB, #45A2D6);
+		    background-repeat: repeat-x;
+		    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15) inset;
+		    color: #FFFFFF;
+		    font-size: 12px;
+		    height: 16px;
+			line-height: 16px;
+		    text-align: center;
+		    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+		    width: 0;
+		}
+		.ui-process-success .ui-process-inner{
+			background-color: #5AB55A;
+			background-image: -moz-linear-gradient(center top , #5EB25E, #52A552);
+			background-image: -webkit-linear-gradient(center top , #5EB25E, #52A552);
+		}
+		.ui-process-warn .ui-process-inner{
+			background-color: #F29613;
+			background-image: -moz-linear-gradient(center top , #EC961C, #F8960A);
+			background-image: -webkit-linear-gradient(center top , #EC961C, #F8960A);
+		}
+
+		.ui-process-striped .ui-process-inner{
+			background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+			background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+			background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+			background-size: 30px 30px;
+		}
+		.ui-process-active .ui-process-inner{
+		  -webkit-animation: process-bar-active 2s linear infinite;
+		     -moz-animation: process-bar-active 2s linear infinite;
+		      -ms-animation: process-bar-active 2s linear infinite;
+		       -o-animation: process-bar-active 2s linear infinite;
+		          animation: process-bar-active 2s linear infinite;
+		}
+
+		@-moz-keyframes process-bar-active{
+		  from {
+			background-position: -30px 0;
+		  }
+		  to {
+			background-position: 0 0;
+		  }
+		}
+		@-webkit-keyframes process-bar-active{
+				  from {
+					background-position: -30px 0;
+				  }
+				  to {
+					background-position: 0 0;
+				  }
+				}
+		@keyframes process-bar-active{
+		  from {
+		    background-position: 30px 0;
+		  }
+		  to {
+		    background-position: 0 0;
+		  }
+		}
+	</style>
+	<style type="text/css">
+		.ui-process{margin-bottom: 10px;}
 	</style>
 </head>
 
@@ -22,6 +98,25 @@
 -->
 
 <body>
-
+<div style="width:300px;padding:10px;">
+	<div class="ui-process">
+		<div class="ui-process-inner" style="width:60%"></div>
+	</div>
+	<div class="ui-process ui-process-success">
+			<div class="ui-process-inner" style="width:20%"></div>
+	</div>
+	<div class="ui-process ui-process-warn">
+			<div class="ui-process-inner" style="width:90%"></div>
+	</div>
+	<div class="ui-process ui-process-striped">
+			<div class="ui-process-inner" style="width:30%"></div>
+	</div>
+	<div class="ui-process ui-process-warn ui-process-striped">
+			<div class="ui-process-inner" style="width:10%"></div>
+	</div>
+	<div class="ui-process ui-process-success ui-process-striped ui-process-active">
+			<div class="ui-process-inner" style="width:50%"></div>
+	</div>
+</div>
 </body>
 </html>

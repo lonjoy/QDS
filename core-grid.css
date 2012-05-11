@@ -1,0 +1,17 @@
+/*
+ * Copy Right: Tencent ISUX
+ * Project: Esay CSS - Qzone
+ * Comments: Grid
+ * @author qileiwei
+ * @author kolawang
+ * @author meterscao
+ */
+
+
+
+
+.wrap{width:940px;}
+.grid{margin-left:-20px;}
+.grid:before,
+.grid:after {content: ".";display: block;height: 0;visibility: hidden;clear: both;}
+.grid{zoom: 1;}

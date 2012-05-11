@@ -8,8 +8,20 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<title>ui-form</title>
+	<link rel="stylesheet" href="../core-reset.css" />
 	<link rel="stylesheet" href="../core-ui.css" />
+
 	<style type="text/css">
+		body{font-size: 12px;}
+
+
+	</style>
+	<style type="text/css">
+		/*.ui-input{margin-bottom:10px;}
+		.ui-btn{}
+		.ui-input,
+		.ui-btn,
+		.form-help{vertical-align:top!important;}*/
 	</style>
 </head>
 
@@ -23,6 +35,95 @@
 -->
 
 <body>
+<form class="ui-form">
+	<fieldset>
+		<legend>
+			通用FORM
+		</legend>
+		<dl>
+			<dd>
+				<div class="form-extend">
+					<div class="ui-tips ui-tips-success ui-tips-M">
+						<span class="ui-close">×</span>
+						<div class="ui-tips-inner">
+							您的信息已经成功提交，感谢您的关注，您接下来可以继续补充信息或者修改信息。
+						</div>
+					</div>
+				</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><label>您的姓名</label></dt>
+			<dd>
+				<input type="text" class="ui-input ui-input-S ui-mr10" /><input type="text" class="ui-input ui-input-S ui-mr10" />
+			</dd>
+		</dl>
+		<dl>
+			<dt><label>用户名</label></dt>
+			<dd>
+				<input type="text" class="ui-input ui-input-M ui-mr10" /><button class="ui-btn ui-btn-success">check</button>
+			</dd>
+		</dl>
 
+		<dl>
+			<dt><label>腾讯股份有限不</label></dt>
+			<dd>
+				<input type="text" class="ui-input ui-input-L" /><span class="form-help">Check your email again please.</span>
+				<p class="form-info">Please input your email.</p>
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><label>腾讯股份有限不</label></dt>
+			<dd>
+				<textarea class="ui-textarea-M"></textarea>
+				<p class="form-info">Please input your email.</p>
+			</dd>
+		</dl>
+		<dl>
+			<dt><label>一辆很好看的车车</label></dt>
+			<dd>
+				<label class="ui-label"><input type="checkbox" class="ui-checkbox" />其实我没有</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt><label>你有一辆很</label></dt>
+			<dd>
+				<label class="ui-label"><input type="radio" class="ui-radio" />其实我没有啦其实我没有啦其实我没有啦，我只会打飞机</label>
+			</dd>
+		</dl>
+		<dl>
+			<dt><label>很好看的车车</label></dt>
+			<dd>
+				<label class="ui-label"><input type="checkbox" class="ui-checkbox" />其实我没有啦，我只会打飞机</label>
+				<div class="form-extend">
+					<div class="ui-tips ui-tips-S">
+						<span class="ui-close">×</span>
+						<div class="ui-tips-inner">
+							我们不允许打飞机，对不起。
+						</div>
+					</div>
+				</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><label>很好看的车车</label></dt>
+			<dd>
+				<select class="ui-select ui-select-L" name="" id="">
+					<option value="">大黄蜂</option><option value="">Benz</option><option value="">BMW</option><option value="">qzone here</option>
+					<option value="">qzone here</option></select>
+			</dd>
+		</dl>
+		<dl>
+			<dt><label>传个图片看下呗</label></dt>
+			<dd>
+				<input type="file" class="ui-fileinput" />
+			</dd>
+		</dl>
+		<div class="form-btnbar">
+			<button type="submit" class="ui-btn ui-btn-success ui-btn-L ui-mr10">确定</button><button type="reset" class="ui-btn ui-btn ui-btn-L ui-mr10">取消</button>
+		</div>
+	</fieldset>
+</form>
 </body>
 </html>

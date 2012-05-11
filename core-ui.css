@@ -55,10 +55,13 @@
 .ui-mr10{margin-right:10px;}
 .ui-mlr10{margin-left:10px;margin-right:10px;}
 
+/*叉叉*/
+.ui-close{zoom:1;width:14px;height: 14px;right:8px;top:11px;cursor: pointer;font-weight: bold;font-size: 20px;text-align: center;line-height: 14px;overflow: hidden;font-family: Arial;color:#DC650F;}
+
 /*按钮*/
 .ui-btn{
+	font-family:Tahoma;
 	vertical-align:middle;
-	margin:0;
 	font-size:12px;
 	text-decoration:none;
 	text-align:center;
@@ -96,38 +99,36 @@
       -ms-transition: background-image 0.1s linear;
        -o-transition: background-image 0.1s linear;
           transition: background-image 0.1s linear;
-
 }
 
-.btn-big {
+.ui-btn-L {
 	font-size:14px;
-	padding:7px 12px;
-	*padding:8px 12px 6px;
+	padding:7px 15px;
+	*padding:8px 15px 6px;
 	line-height:18px;
 }
 
-.btn-normal{
+.ui-btn-normal{
 	color:#fff;
 	background-color:#35A0DA;
 	/*background-color:green;*/
 	border-color:#46A8F3;
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#51B5EB), to(#53B1E4));
-  	background-image: -webkit-linear-gradient(top, #51B5EB, #53B1E4);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#55BCF2), to(#53B2E6));
+  	background-image: -webkit-linear-gradient(top, #55BCF2, #53B2E6);
 	background-image:-moz-linear-gradient(top, #55BCF2, #53B2E6);
 	background-image: linear-gradient(top, #55BCF2, #53B2E6);
 	filter: progid:dximagetransform.microsoft.gradient(startColorstr=#51B5EB, endColorstr=#53B1E4, GradientType=0);
 }
 
-.btn-normal:hover{
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4cabde), to(#4cabde));
-  	background-image: -webkit-linear-gradient(top, #4cabde, #4cabde);
+.ui-btn-normal:hover{
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4EB5EB), to(#45A2D6));
+  	background-image: -webkit-linear-gradient(top, #4EB5EB, #45A2D6);
 	background-image:-moz-linear-gradient(top, #4EB5EB, #45A2D6);
 	background-image: linear-gradient(top, #4EB5EB, #45A2D6);
-	filter: progid:dximagetransform.microsoft.gradient(startColorstr=#4cabde, endColorstr=#4cabde, GradientType=0);
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr=#4EB5EB, endColorstr=#45A2D6, GradientType=0);
 }
 
-
-.btn-warn{
+.ui-btn-warn{
 	color:#fff;
 	background-color:#E38703;
 	border-color:#E1962D;
@@ -138,7 +139,7 @@
 	filter: progid:dximagetransform.microsoft.gradient(startColorstr=#FAAE42, endColorstr=#F8970C, GradientType=0);
 }
 
-.btn-warn:hover{
+.ui-btn-warn:hover{
 	background-color:#F29613;
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#EC961C), to(#F8960A));
   	background-image: -webkit-linear-gradient(top, #EC961C, #F8960A);
@@ -147,12 +148,12 @@
 	filter: progid:dximagetransform.microsoft.gradient(startColorstr=#EC961C, endColorstr=#F8960A, GradientType=0);
 }
 
-.btn-warn:active{
+.ui-btn-warn:active{
 	background-color:#F29613;
 	border-color:#DA8918;
 }
 
-.btn-success{
+.ui-btn-success{
 	color:#fff;
 	background-color:#5AB55A;
 	border-color:#52A552;
@@ -163,8 +164,8 @@
 	filter: progid:dximagetransform.microsoft.gradient(startColorstr=#5EBD5E, endColorstr=#55AB55, GradientType=0);
 }
 
-.btn-success:hover{
-	background-color:#F39612;
+.ui-btn-success:hover{
+	background-color:#5AB55A;
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5EB25E), to(#52A552));
   	background-image: -webkit-linear-gradient(top, #5EB25E, #52A552);
 	background-image:-moz-linear-gradient(top, #5EB25E, #52A552);
@@ -172,12 +173,10 @@
 	filter: progid:dximagetransform.microsoft.gradient(startColorstr=#5EB25E, endColorstr=#52A552, GradientType=0);
 }
 
-.btn-success:active{
+.ui-btn-success:active{
 	background-color:#50A350;
 	border-color:#249B24;
 }
-
-
 
 .ui-btn:active{
 	background-image:none;
@@ -186,9 +185,9 @@
           box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-.btn-disable,
-.btn-disable:hover,
-.btn-disable:active{
+.ui-btn-disable,
+.ui-btn-disable:hover,
+.ui-btn-disable:active{
 	outline:none;
 	cursor:no-drop;
 	color:#aaa;
@@ -201,47 +200,21 @@
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-.btn-normal:active{
-	border-color:#1F89CA;
-}
-
+.ui-btn-normal:active{border-color:#1F89CA;}
 .ui-btn,
-.btn-disable{
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
-}
-
-.btn-normal,
-.btn-warn,
-.btn-success
-{
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-}
-
+.ui-btn-disable{text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);}
+.ui-btn-normal,
+.ui-btn-warn,
+.ui-btn-success{text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);}
 
 /*让Firefox下button和input默认的border和padding都抬去掉*/
 button.ui-btn::-moz-focus-inner,
-input[type="submit"].ui-btn::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
+input[type="submit"].ui-btn::-moz-focus-inner {padding: 0;border: 0;}
 
-button.ui-btn{
-	*line-height:13px;
-}
-
-button.btn-big {
-	*line-height:14px
-}
-
-input.ui-btn{
-	*padding-top:5px;
-	*padding-bottom:1px;
-	*line-height:13px;
-}
-input.btn-big {
-	*line-height:14px;
-}
-
+button.ui-btn{*line-height:13px;}
+button.ui-btn-L {*line-height:14px}
+input.ui-btn{*padding-top:5px;*padding-bottom:1px;*line-height:13px;}
+input.ui-btn-L {*line-height:14px;}
 
 /*左图右文*/
 .ui-imgblock{zoom:1;}
@@ -262,11 +235,6 @@ dd{margin-left:8px;}
 
 
 /* ui-table */
-
-.ui-table-wrap{
-	width:700px;
-	margin:30px;
-}
 .ui-table,
 .ui-table th,
 .ui-table td,
@@ -312,8 +280,80 @@ dd{margin-left:8px;}
 .ui-table tbody tr.t-highlight{
 	background-color: #e5ffce;
 }
-
-
 .ui-table .t-left { text-align:left; }
 .ui-table .t-right{ text-align:right; }
 .ui-table .t-mid  { vertical-align:middle; }
+
+
+/* 提示条 */
+.ui-tips{position: relative;zoom:1;color:#555}
+.ui-tips a{color:#F48C12;text-decoration: none;}
+.ui-tips a:hover{text-decoration: underline}
+.ui-tips .ui-close{position: absolute;}
+.ui-tips .ui-tips-inner{border:1px solid #EACFA9;background: #FFFDE5;padding:7px 23px 7px 10px ;line-height: 20px;border-radius: 3px;}
+.ui-tips .ui-tips-inner .ui-tips-header{font-size: 14px;line-height: 18px;padding-bottom: 5px;}
+/* 其它状态 */
+.ui-tips-success .ui-tips-inner{border-color:#b0d5b0;background-color: #dbf2db;color: #447c44}
+.ui-tips-success .ui-close{color:#447c44}
+/*大小设定*/
+.ui-tips-S{width:250px;}
+.ui-tips-M{width:400px;}
+.ui-tips-L{width:500px;}
+
+
+/*表单元素*/
+.ui-input,
+.ui-textarea,
+.ui-select,
+select,
+textarea,
+input[type="text"]{border:1px solid #BCBCBC;border-radius:3px;height:14px;line-height:14px;padding:4px 4px;vertical-align:middle;width:140px;font-size:12px;color:#454545;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+    -moz-transition:border 0.2s linear, box-shadow 0.2s linear;
+}
+.ui-textarea,
+textarea{width:240px;height:80px;line-height:16px;}
+.ui-input:focus,
+.ui-textarea:focus,
+textarea:focus,
+input[type="text"]:focus{
+    border-color:rgba(82, 168, 236, 0.8);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 5px rgba(82, 168, 236, 0.7);
+}
+.ui-input-XS,
+input[type="text"].ui-input-XS{width:40px}
+.ui-input-S,
+input[type="text"].ui-input-S{width:110px}
+.ui-input-M,
+input[type="text"].ui-input-M{width:240px}
+.ui-input-L,
+input[type="text"].ui-input-L{width:240px}
+.ui-input-XL,
+input[type="text"].ui-input-XL{width:340px}
+.ui-textarea-S{width:140px;height:48px}
+.ui-textarea-M{width:240px;height:64px}
+.ui-textarea-L{width:340px;}
+
+.ui-label{cursor:pointer;padding-top:5px;vertical-align:middle;padding-left: 18px;}
+.ui-label .ui-checkbox,
+.ui-label .ui-radio {width:13px;height:13px;overflow:hidden;padding:0;vertical-align:-3px;margin:0 5px 0 -18px;cursor:pointer}
+.ui-select{height:24px;padding:2px;line-height: 24px;}
+.ui-select-S{width:100px;}
+.ui-select-M{width:150px;}
+.ui-select-L{width:250px;}
+
+.ui-fileinput{height:24px;width:250px;}
+
+/*表单*/
+.ui-form{margin:0;padding:0}
+.ui-form fieldset{border:1px solid #ccc;padding:10px;margin:10px;}
+.ui-form fieldset legend{padding:0 5px;}
+.ui-form dl{zoom: 1;margin-bottom:10px;padding:0;}
+.ui-form dl:before,
+.ui-form dl:after {content: ".";display: block;height: 0;visibility: hidden;clear: both;}
+.ui-form dt{margin:0;padding:0;float:left;font-weight:normal;line-height:24px;width:120px;text-align:right;}
+.ui-form dd{margin-left:135px;_display:inlne;}
+.ui-form .form-info{font-size:12px;line-height:18px;margin-top:3px;}
+.ui-form .form-help{font-size:12px;line-height:24px;vertical-align:middle;margin-left:10px;}
+.ui-form .form-btnbar{background: #eee;padding:10px 0 10px 135px}
+.ui-form .form-extend{margin-top:10px;}

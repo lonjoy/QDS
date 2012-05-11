@@ -8,7 +8,11 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<title>cell-pagenav</title>
+	<link rel="stylesheet" href="../core-reset.css" />
+	<link rel="stylesheet" href="../core-ui.css" />
+	<link rel="stylesheet" href="../core-cell.css" />
 	<style type="text/css">
+	.ui-item{padding:10px;}
 	</style>
 </head>
 
@@ -22,6 +26,33 @@
 -->
 
 <body>
-
+<div class="ui-item lay-describe">
+	<h2>分页组件 - 默认居中</h2>
+	<p>提供分页的基本结构和样式，不建议直接修改样式，可添加类名进行覆盖</p>
+</div>
+<div class="ui-item lay-preview">
+	<div class="cell-pagenav">
+		<a href="#" class="prev">上一页</a><a href="#">1</a><a href="#">2</a><span class="active">3</span><a href="#">4</a><a href="#">5</a><span class="break">...</span><a href="#">20</a><a href="#" class="next">下一页</a><span class="jump">跳转至<input type="text" >页</span>
+		<button class="ui-btn btn-normal">确定</button>
+	</div>
+</div>
+<div class="ui-item lay-describe">
+	<h2>分页组件 - 居左</h2>
+</div>
+<div class="ui-item lay-preview">
+	<div class="cell-pagenav cell-pagenav-left">
+		<a href="#" class="prev">上一页</a><a href="#">1</a><a href="#">2</a><span class="active">3</span><a href="#">4</a><a href="#">5</a><span class="break">...</span><a href="#">20</a><a href="#" class="next">下一页</a><span class="jump">跳转至<input type="text" >页</span>
+		<button class="ui-btn btn-normal">确定</button>
+	</div>
+</div>
+<div class="ui-item lay-describe">
+	<h2>分页组件 - 居右</h2>
+</div>
+<div class="ui-item lay-preview">
+	<div class="cell-pagenav cell-pagenav-right">
+		<a href="#" class="prev">上一页</a><a href="#">1</a><a href="#">2</a><span class="active">3</span><a href="#">4</a><a href="#">5</a><span class="break">...</span><a href="#">20</a><a href="#" class="next">下一页</a><span class="jump">跳转至<input type="text" >页</span>
+		<button class="ui-btn btn-normal">确定</button>
+	</div>
+</div>
 </body>
 </html>

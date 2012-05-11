@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="all" />
+	<meta name="author" content="" />
+	<meta name="copyright" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<title>cell-nav</title>
+	<link rel="stylesheet" href="../core-reset.css" />
+	<link rel="stylesheet" href="../core-ui.css" />
+	<link rel="stylesheet" href="../core-cell.css" />
+
+	<style type="text/css">
+	.ui-item{padding:10px;}
+	em{font-weight:700;color:#f60}
+	</style>
+</head>
+
+<!--
+	Copy Right: Tencent ISUX
+	Project: Esay CSS - Qzone
+	Comments: tab
+	@author qileiwei
+	@author kolawang
+	@author meterscao
+-->
+
+<body>
+	<div class="ui-item lay-describe">
+		<h2>导航组件 - tab导航</h2>
+		<p>基础tab：提供tab导航的基本结构和样式，不建议直接修改样式，可添加类名进行覆盖</p>
+	</div>
+	<div class="ui-item lay-preview">
+		<div class="cell-tab">
+			<ul class="cell-tab-tags">
+				<li class="active"><a href="#">选中项</a></li>
+				<li><a href="#">选项二</a></li>
+				<li><a href="#">选项三</a></li>
+			</ul>
+			<div class="cell-tab-other">
+				.cell-tab-other 扩展区 放个更多什么的
+			</div>
+		</div>
+	</div>
+	<div class="ui-item lay-describe">
+		<h2>导航组件 - tab导航 <em>J</em></h2>
+		<p>tab 内容区域的class为 cell-tab-panel，调用js时需要给 cell-tab 容器一个钩子，例如下面的id <em>simpleTab</em>，然后可以像这样调用<em>$("#simpleTab").tab()</em></p>
+	</div>
+	<div class="ui-item lay-preview">
+		<div class="cell-tab" id="simpleTab">
+			<ul class="cell-tab-tags">
+				<li class="active"><a href="#">选中项</a></li>
+				<li><a href="#">选项二</a></li>
+				<li><a href="#">选项三</a></li>
+				<li><a href="#">选项四</a></li>
+			</ul>
+			<div class="cell-tab-other">
+				.cell-tab-other 扩展区 放个更多什么的
+			</div>
+		</div>
+		<div class="cell-tab-cont">
+			<div class="cell-tab-pane active">岁月静好</div>
+			<div class="cell-tab-pane">阳光温热</div>
+			<div class="cell-tab-pane">你还不来</div>
+			<div class="cell-tab-pane">我怎敢老去</div>
+		</div>
+	</div>
+	<div class="ui-item lay-describe">
+		<h2>导航组件 - tab导航 <em>J</em></h2>
+		<p>tab 内容区域的class为 cell-tab-panel，调用js时需要给 cell-tab 容器一个钩子，例如下面的id <em>simpleTabLeft</em>，然后可以像这样调用<em>$("#simpleTabLeft").tab()</em></p>
+	</div>
+	<div class="ui-item lay-preview">
+		<div class="cell-tabs cell-tabs-left">
+			<div class="cell-tab" id="simpleTabLeft">
+				<ul class="cell-tab-tags">
+					<li class="active"><a href="#">选中项</a></li>
+					<li><a href="#">选项二</a></li>
+					<li><a href="#">选项三</a></li>
+					<li><a href="#">选项四</a></li>
+				</ul>
+			</div>
+			<div class="cell-tab-cont">
+				<div class="cell-tab-pane active">岁月静好</div>
+				<div class="cell-tab-pane">阳光温热</div>
+				<div class="cell-tab-pane">你还不来</div>
+				<div class="cell-tab-pane">我怎敢老去</div>
+			</div>
+		</div>
+	</div>
+	<div class="ui-item lay-describe">
+		<h2>导航组件 - tab.stacked导航</h2>
+		<p>基础 stacked tab：提供stacked tab导航的基本结构和样式</p>
+	</div>
+	<div class="ui-item lay-preview">
+		<div class="cell-tab cell-tab-stacked">
+			<ul class="cell-tab-tags">
+				<li class="active"><a href="#">选中项</a></li>
+				<li><a href="#">选项二</a></li>
+				<li><a href="#">选项三</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="ui-item lay-describe">
+		<h2>导航组件 - tab.stacked导航 - 带图标</h2>
+	</div>
+	<div class="ui-item lay-preview">
+		<div class="cell-tab cell-tab-stacked">
+			<ul class="cell-tab-tags">
+				<li class="active"><a href="#"><i class="ui-list-icon-m"><i class="ui-icon icon-bell-m"></i></i>16x16 icon</a></li>
+				<li><a href="#"><i class="ui-list-icon-m"><i class="ui-icon icon-clock-m"></i></i>16x16 icon</a></li>
+				<li><a href="#"><i class="ui-list-icon-l"><i class="ui-icon icon-bell-l"></i></i>24x24 icon</a></li>
+				<li><a href="#"><i class="ui-list-icon-l"><i class="ui-icon icon-clock-l"></i></i>24x24 icon</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="ui-item lay-describe">
+		<h2>导航组件 - pill导航</h2>
+		<p>基础pill导航：提供pill导航的基本结构和样式</p>
+	</div>
+	<div class="ui-item lay-preview">
+		<div class="cell-pill">
+			<ul class="cell-pill-tags">
+				<li class="active"><a href="#">选中项</a></li>
+				<li><a href="#">选项二</a></li>
+				<li><a href="#">选项三</a></li>
+			</ul>
+			<div class="cell-pill-other">
+				.cell-tab-other 扩展区 放个更多什么的
+			</div>
+		</div>
+	</div>
+	<div class="ui-item lay-describe">
+		<h2>导航组件 - pill.stacked导航</h2>
+		<p>基础 stacked pill：提供stacked pill导航的基本结构和样式</p>
+	</div>
+	<div class="ui-item lay-preview">
+		<div class="cell-pill cell-pill-stacked">
+			<ul class="cell-pill-tags">
+				<li class="active"><a href="#">选中项</a></li>
+				<li><a href="#">选项二</a></li>
+				<li><a href="#">选项三</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="ui-item lay-describe">
+		<h2>导航组件 - tab.stacked导航 - 带图标</h2>
+	</div>
+	<div class="ui-item lay-preview">
+		<div class="cell-pill cell-pill-stacked">
+			<ul class="cell-pill-tags">
+				<li class="active"><a href="#"><i class="ui-list-icon-m"><i class="ui-icon icon-bell-m"></i></i>16x16 icon</a></li>
+				<li><a href="#"><i class="ui-list-icon-m"><i class="ui-icon icon-clock-m"></i></i>16x16 icon</a></li>
+				<li><a href="#"><i class="ui-list-icon-l"><i class="ui-icon icon-bell-l"></i></i>24x24 icon</a></li>
+				<li><a href="#"><i class="ui-list-icon-l"><i class="ui-icon icon-clock-l"></i></i>24x24 icon</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="ui-item lay-describe">
+		<h2>导航组件 - 面包屑导航</h2>
+		<p>基础面包屑导航：提供面包屑导航的基本结构和样式</p>
+	</div>
+	<div class="ui-item lay-preview">
+		<div class="cell-breadcrumb">
+			<ul class="cell-breadcrumb-tags">
+				<li><a href="#">首页</a><span class="divider">&gt;</span></li>
+				<li><a href="#">二级页</a><span class="divider">&gt;</span></li>
+				<li class="active">三级页（当前页面）</li>
+			</ul>
+		</div>
+	</div>
+	<script src="../js/jq.1.7.js"></script>
+	<script src="../js/tab.js"></script>
+	<script>
+		$("#simpleTab").tab();
+		$("#simpleTabLeft").tab();
+	</script>
+</body>
+</html>

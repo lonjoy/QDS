@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="all" />
+	<meta name="author" content="" />
+	<meta name="copyright" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<title>Catcher-Doc</title>
+	<style type="text/css">
+		body{line-height:1.5;font-size:14px;}
+		em{color:#900}
+		section{padding-left:2em;margin-bottom:4em;}
+		section > h2{text-indent:-1em;}
+		section > h3{margin:0 0 0.5em 0;}
+		section > dl,
+		section > ul,
+		section > ol{margin:0 0 2em 2em;}
+
+
+/*临时演示的各个部分色块填充 Str*/
+.lay-main{background-color: #dff5fd;}
+.lay-sidebar{background-color: #ECFAFF;}
+.lay-extra{background-color: #ECFAFF;}
+.placeholder{padding:50px;font-size:2em;color:#ccc;border:1px solid #e6e6e6;}
+/*临时演示的各个部分色块填充 End*/
+
+
+	</style>
+</head>
+<body>
+<article>
+	<section>
+		<h2>框架结构</h2>
+		<h3>页面模板</h3>
+		<dl>
+			<dt>DTD</dt>
+			<dd>
+				使用HTML5的文件头声明&lt;!DOCTYPE HTML&gt;</dd>
+			<dt>编码</dt>
+			<dd>&lt;meta charset="UTF-8"&gt;</dd>
+			<dt>IE渲染模式</dt>
+			<dd>&ltmeta http-equiv="X-UA-Compatible" content="edge" /&gt;</dd>
+		</dl>
+		<h3>代码约定</h3>
+		<ol>
+			<li>标签使用约定</li>
+			<li>标签属性使用约定</li>
+			<li>样式命名写法约定</li>
+			<li>注释规范</li>
+		</ol>
+		<h3>页面布局</h3>
+		<ol>
+			<li>
+				栏目居中固定布局
+				<ul>
+					<li>900px</li>
+					<li>940px</li>
+					<li>960px</li>
+					<li>1000px</li>
+					<li>1170px</li>
+				</ul>
+			</li>
+			<li>
+				页面自适宽度布局
+				<ul>
+					<li>左栏固定宽 + 右栏自适应</li>
+					<li>左栏自适应 + 右栏固定宽</li>
+					<li>左右两栏固定宽 + 中栏自适应</li>
+				</ul>
+			</li>
+			<li>
+				页面栅格布局（响应式）
+				<ul>
+					<li>940宽12栏栅格</li>
+					<li>1170宽12栏栅格</li>
+				</ul>
+			</li>
+		</ol>
+		<h3>页面无障碍性</h3>
+		<ol>
+			<li>标签，属性</li>
+			<li>解决方案</li>
+		</ol>
+		<h3>响应式布局</h3>
+		<ol>
+			<li>布局参照
+				<ul>
+					<li>智能手机 480px <= W</li>
+					<li>智能手机和平板电脑 480px < W <= 768px</li>
+					<li>平板电脑 768px < W <=960</li>
+					<li>普通屏幕(默认) 960px < W <= 1200px</li>
+					<li>大屏幕 1200px <= W</li>
+				</ul>
+			</li>
+			<li>多设备解决方案</li>
+		</ol>
+	</section>
+
+</article>
+</body>
+</html>			

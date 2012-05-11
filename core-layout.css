@@ -8,3 +8,55 @@
  */
 
 
+
+
+
+
+
+/* 主栏 Str */
+.lay-container:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.lay-container {*zoom:1;}
+
+.lay-main-wrapper{float:left;width:100%;}
+
+/* lay-apple 左栏固定宽，右栏自适应宽 s-m*/
+.lay-apple .lay-main{margin-left:205px}/*左margin对应左边栏的宽度 + 左右栏间距*/
+.lay-apple  .lay-sidebar{float:left;margin-left:-100%;width:200px;}
+
+/* lay-mango 右栏固定宽，左栏自适应宽 m-s*/
+.lay-mango .lay-main{margin-right:205px}/*右margin对应右边栏的宽度 + 左右栏间距*/
+.lay-mango .lay-sidebar{float:left;margin-left:-200px;width:200px;}
+
+/* lay-banana 三栏 边栏固定宽，主栏自适应宽 s-m-s */
+.lay-banana .lay-main{margin:0 305px 0 205px}/*左右margin分别对应左右边栏的宽度 + 左右栏间距*/
+.lay-banana .lay-sidebar{float:left;margin-left:-100%;width:200px;}
+.lay-banana .lay-extra{float:left;width:300px;margin-left:-300px;}
+
+/* lay-ananas 三栏 边栏固定宽，主栏自适应宽 m-s-s */
+.lay-ananas .lay-main{margin-right:505px;}/*右margin对应左右边栏的宽度 + 与主栏间距*/
+.lay-ananas .lay-sidebar{float:left;margin-left:-500px;width:200px;}
+.lay-ananas .lay-extra{float:left;width:295px;margin-left:-295px;}
+
+/* lay-grape 三栏 边栏固定宽，主栏自适应宽 s-s-m */
+.lay-grape .lay-main-wrapper{float:right;width:100%;margin-left:-505px;}
+.lay-grape .lay-main{margin-left:510px;}/*右margin对应左右边栏的宽度*/
+.lay-grape .lay-sidebar{float:right;width:200px;margin-left:5px;}
+.lay-grape .lay-extra{float:right;width:300px;}
+
+
+
+
+
+/* 响应式布局 Str */
+/* @media screen and (max-width:700px){
+	.lay-main{margin:0}
+	.lay-sidebar,.lay-extra{ float: none;margin:0; width: auto;}
+
+}
+/* 响应式布局 End */
